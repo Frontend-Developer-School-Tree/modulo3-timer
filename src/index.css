@@ -5,9 +5,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #34495e;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: 400px;
+  margin: auto;
+  background-color: #ecf0f1;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.Title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.TitleMain {
+  margin: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.TimeViewer {
+  text-align: center;
+}
+
+.TimeViewerValue {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.TimeActions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.TimeAction {
+  border: none;
+  padding: 10px;
+  background-color: #34495e;
+  color: #fff;
+  width: 100%;
+  margin: 0 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.TimeList {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.TimeList li {
+  padding: 5px;
+  border-bottom: solid 1px #bdc3c7;
+}
+
+.TimeList li .TimeViewer {
+  text-align: left;
 }
